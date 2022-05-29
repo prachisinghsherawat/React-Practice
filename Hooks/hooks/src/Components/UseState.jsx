@@ -23,7 +23,7 @@ export const UseStateHook = () => {
     let AddColors = (e) => {
         e.preventDefault()
 
-        
+        setColors([...colors , {id : colors.length , colors}])
 
     }
     
@@ -49,12 +49,22 @@ export const UseStateHook = () => {
 
 
         {/* -------------------------------------------------------------------------------------------- */}
-        
 
-        <form>
-            <input type="text" id="input" placeholder="enter your colour"/>
+
+        <form onSubmit={AddColors}>
+
+            <input type="text" id="input" placeholder="enter your colour" onChange={(e)=>{e.target.value}}/>
             <input type="submit" id="submit"/>
-        </form>
+
+        </form><br />
+
+        <ul>
+            {colors.map((el)=>{
+                <li key={el.id}>
+                    {el.colors}
+                </li>
+            })}
+        </ul>
 
         </>
     )
