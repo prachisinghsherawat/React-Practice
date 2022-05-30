@@ -5,7 +5,8 @@ export const UseStateHook = () => {
     const [name , setName] = useState("Prachi");
     const [flag , setFlag] = useState(false);
     const [steps ,setSteps] = useState(0);
-    const [colors , setColors] = useState([])
+    const [colors , setColors] = useState([]);
+    const [addcolor , setAddcolor] = useState("");
 
     let changeName = () => {
         // setName("Singh")
@@ -23,9 +24,10 @@ export const UseStateHook = () => {
     let AddColors = (e) => {
         e.preventDefault()
 
-        setColors([...colors , {id : colors.length , colors}])
+        setColors([...colors , {id : colors.length , color : addcolor}])
 
     }
+    console.log(addcolor)
     
 
     return(
@@ -53,7 +55,7 @@ export const UseStateHook = () => {
 
         <form onSubmit={AddColors}>
 
-            <input type="text" id="input" placeholder="enter your colour" onChange={(e)=>{e.target.value}}/>
+            <input type="text" id="input" placeholder="enter your colour" onChange={(e)=> setAddcolor(e.target.value)}/>
             <input type="submit" id="submit"/>
 
         </form><br />
