@@ -1,8 +1,11 @@
 
+h1{
+  text-align: center;
+}
 
 .todo{
   margin: auto;
-  height: 500px;
-  width: 50%;
+  height: 600px;
+  width: 40%;
   border: 3px solid black;
 }
