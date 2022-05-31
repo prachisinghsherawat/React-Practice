@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export const Balloon = () => {
 
     const [balloon , setBalloon] = useState([])
-    const [num , setNum] = useState(null)
+    const [num , setNum] = useState(null)                    // input value entered by user
     const [box , setBox] = useState([])
 
     useEffect(() => {RandomColorArray()},[])
@@ -31,7 +31,7 @@ export const Balloon = () => {
 
         var colorArr = Array(5)
         .fill()
-        .map( ( _,i) => ({ id : i , color : RandomColor()}))
+        .map( ( _ ,i) => ({ id : i , color : RandomColor()}))
         setBalloon([...colorArr])
     }
 
@@ -46,6 +46,19 @@ export const Balloon = () => {
         let removed = newArr.splice((index-1) , 1)
         box.push(...removed)
         setBalloon([...balloon])
+        setNum(null)
+
+        document.getElementById("balloonNumber").value = ""
+    }
+
+    const BalloonBack = (index) => {
+
+        let arr = box;
+
+        let removed = arr.splice((index),1)
+        balloon.push(...removed)
+        balloon.sort((a,b) => a.id - b.id)
+        setBalloon([...balloon])
     }
 
 
@@ -59,8 +72,8 @@ export const Balloon = () => {
         <div className="mainDiv">
 
             <div className="left">
-                {box.map((el) => (
-                    <div style={{backgroundColor : el.color}} key={el.id}>
+                {box.map((el,index) => (
+                    <div onClick={() => BalloonBack(index)} style={{backgroundColor : el.color}} key={el.id}>
 
                     </div>
                 ))}
@@ -77,7 +90,7 @@ export const Balloon = () => {
 
 
             <div className="input">
-                <input type="text" id="ballonnumber" placeholder="Enter Your Ballon Number" onChange={(e)=>setNum(e.target.value)} /> <br />
+                <input type="text" id="balloonNumber" placeholder="Enter Your Ballon Number" onChange={(e)=>setNum(e.target.value)} /> <br />
                 <button onClick={() => ShootBalloon(num)} > Shoot </button>
             </div>
 
