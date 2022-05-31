@@ -6,8 +6,8 @@ import { Balloon } from './Components/Balloon';
 function App() {
   return (
     <div className="App">
-      <Todo/>
-      {/* <Balloon /> */}
+      {/* <Todo/> */}
+      <Balloon />
     </div>
   );
 }
