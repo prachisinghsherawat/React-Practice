@@ -5,10 +5,15 @@ import { useEffect } from "react";
 
 export const Balloon = () => {
 
-    const [color , setColor] = useState([]);
+    const [balloon , setBalloon] = useState([])
+    const [num , setNum] = useState(null)
+    const [box , setBox] = useState([])
+
+    useEffect(() => {RandomColorArray()},[])
 
 
-    // ------------------- For generating Random Colors ----------------------------------------->
+
+    // ------------------- For Generating Random Colors ----------------------------------------->
 
 
     const RandomColor = () => {
@@ -26,29 +31,58 @@ export const Balloon = () => {
 
         var colorArr = Array(5)
         .fill()
-        .map( ( _,index) => ({ id : index , color : RandomColor()}))
-        setColor([...colorArr])
+        .map( ( _,i) => ({ id : i , color : RandomColor()}))
+        setBalloon([...colorArr])
     }
 
-    useEffect(() => {RandomColorArray()},[])
+    const ShootBalloon = (index) => {
+
+        let newArr = balloon
+
+        if(index == null){
+            return
+        }
+
+        let removed = newArr.splice((index-1) , 1)
+        box.push(...removed)
+        setBalloon([...balloon])
+    }
+
+
 
     return(
+
         <>
 
         <h1>BALLOON GAME</h1>
 
         <div className="mainDiv">
-            <div className="left"></div>
+
+            <div className="left">
+                {box.map((el) => (
+                    <div style={{backgroundColor : el.color}} key={el.id}>
+
+                    </div>
+                ))}
+            </div>
+
+
             <div className="right">
-                {color.map((el)=>(
+                {balloon.map((el)=>(
                     <div style={{backgroundColor : el.color}} key={el.id} >
                     </div>
                 ))}
             </div>
+
+
+
             <div className="input">
-                <input type="text" id="ballonnumber" placeholder="Enter Your Ballon Number"  /> <br />
-                <button>Shoot</button>
+                <input type="text" id="ballonnumber" placeholder="Enter Your Ballon Number" onChange={(e)=>setNum(e.target.value)} /> <br />
+                <button onClick={() => ShootBalloon(num)} > Shoot </button>
             </div>
+
+
+
         </div>
 
           
