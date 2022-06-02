@@ -4,6 +4,7 @@ import { Todo } from './Components/Todo';
 import { Balloon } from './Components/Balloon';
 import { UseRefHook } from './Components/Hooks/UseRefHook';
 import { UseMemoHook } from './Components/Hooks/UseMemoHook';
+import { UseReducerHook } from './Components/Hooks/UseReducerHook';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Todo/> */}
       {/* <Balloon /> */}
       {/* <UseRefHook /> */}
-      <UseMemoHook />
+      {/* <UseMemoHook /> */}
+      <UseReducerHook />
     </div>
   );
 }
