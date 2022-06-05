@@ -1,5 +1,8 @@
 import { useReducer, useState } from "react"
 
+const Reducer = (state , {type , payload}) => {
+    
+}
 
 export const UseReducerHook = () => {
 
@@ -7,6 +10,8 @@ export const UseReducerHook = () => {
 
     const [counter , dispatch] = useReducer(reducer , initState)          //  useReducer(function , object)
     console.log(useReducer())
+
+
 
     return(
         <>
