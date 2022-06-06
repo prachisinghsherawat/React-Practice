@@ -2,9 +2,9 @@
 { "movies" : [
 
     {
-        "id" : 6,
-        "img" : "https://i.pinimg.com/originals/4a/c8/d3/4ac8d368ca9e3b8806cd6926c8152d37.png" ,
-        "name" : "Yeh Jawani Hai Deewani",
+        "id" : 1,
+        "img" : "https://i.pinimg.com/736x/bb/09/18/bb0918530286ed129933d2354fc33943.jpg" ,
+        "name" : "Tamasha",
         "rating" : "5",
         "type" : "romantic"
     },
@@ -34,14 +34,6 @@
     },
 
     {
-        "id" : 10,
-        "img" : "https://i.pinimg.com/736x/bb/09/18/bb0918530286ed129933d2354fc33943.jpg" ,
-        "name" : "Tamasha",
-        "rating" : "5",
-        "type" : "romantic"
-    },
-
-    {
         "id" : 5,
         "img" : "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKbRuJq6etcHflMhFORZbRmZMqfnfZEldqY53jbin9dPhajzMa" ,
         "name" : "Entertainment",
@@ -50,7 +42,7 @@
     },
 
     {
-        "id" : 1,
+        "id" : 6,
         "img" : "https://img.gurugamer.com/resize/740x-/2020/08/17/bajirao-mastani-7ff9.jpg" ,
         "name" : "Bajirao Mastaani",
         "rating" : "3",
@@ -82,6 +74,14 @@
     },
 
     {
+        "id" : 10,
+        "img" : "https://images-na.ssl-images-amazon.com/images/I/71epG0m0KZL._RI_.jpg" ,
+        "name" : "Jab We Met",
+        "rating" : "5",
+        "type" : "romantic"
+    },
+
+    {
         "id" : 11,
         "img": "https://m.media-amazon.com/images/M/MV5BOGI1N2QwNjYtMjQzOS00NjZiLTg1YzEtMDVjZGY0YjkwODNjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" ,
         "name" : "Prathviraj",
@@ -90,11 +90,13 @@
     },
 
     {
-        "id" : 10,
-        "img" : "https://images-na.ssl-images-amazon.com/images/I/71epG0m0KZL._RI_.jpg" ,
-        "name" : "Jab We Met",
+        "id" : 12,
+        "img" : "https://i.pinimg.com/originals/4a/c8/d3/4ac8d368ca9e3b8806cd6926c8152d37.png" ,
+        "name" : "Yeh Jawani Hai Deewani",
         "rating" : "5",
         "type" : "romantic"
     }
+
+   
               
 ]}
