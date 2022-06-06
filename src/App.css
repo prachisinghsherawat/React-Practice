@@ -9,13 +9,32 @@ h1{
   width: 20%;
 }
 
+/* ---------------------------------------------------------------------------------------------------------- */
+
 .nav{
   height: 25px ;
   padding: 1% 2%;
-  width: 100%;
+  width: 96%;
   list-style: none;
   display: flex;
   color: rgb(248, 247, 245);
   justify-content: space-evenly;
   background-color: rgb(7, 7, 7);
+}
+
+.homePage{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 29px;
+}
+
+.imgBox{
+  height: 380px;
+  width : 270px;
+}
+
+#imgIs{
+  height: 100%;
+  width: 100%;
 }
