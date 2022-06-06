@@ -8,7 +8,7 @@ export const UseReducerHook = () => {
 
     const initState = {counter : 0} 
 
-    const [counter , dispatch] = useReducer(reducer , initState)          //  useReducer(function , object)
+    const [counter , dispatch] = useReducer(Reducer , initState)          //  useReducer(function , object)
     console.log(useReducer())
 
 
