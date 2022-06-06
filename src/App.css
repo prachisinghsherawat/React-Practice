@@ -9,3 +9,11 @@ h1{
   width: 20%;
 }
 
+.nav{
+  height: 30px ;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(7, 7, 7);
+}
