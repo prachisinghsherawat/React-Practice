@@ -13,6 +13,7 @@ export const Home = () => {
             <li>Thrill</li>
             <li>Action</li>
             <li>History</li>
+            <li>Romantic</li>
         </div>
 
         </>
