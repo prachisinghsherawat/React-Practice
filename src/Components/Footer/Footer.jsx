@@ -150,35 +150,35 @@ export const Footer = () => {
                     <li>Instagram</li>
                     <li>Twitter</li>
                 </div>
-       </div>
-
-       <hr />
-
-        <div className="right">
-
-            <div>
-                <li>Mail Us:</li>
-                <li>Registered Office Address:</li>
-                <li>Buildings Alyssa, Begonia &</li>
-                <li>Clove Embassy Tech Village,</li>
-                <li>Outer Ring Road, Devarabeesanahalli Village,</li>
-                <li>Bengaluru, 560103,</li>
-                <li>Karnataka, India</li>
             </div>
 
-            <div>
-                <li>Registered Office Address:</li>
-                <li>Flipkart Internet Private Limited,</li>
-                <li>Buildings Alyssa, Begonia &</li>
-                <li>Clove Embassy Tech Village,</li>
-                <li>Outer Ring Road, Devarabeesanahalli Village,</li>
-                <li>Bengaluru, 560103,</li>
-                <li>Karnataka, India</li>
-                <li>CIN : U51109KA2012PTC066107</li>
-                <li>Telephone: 044-45614700</li>
-            </div>
+            <hr />
 
-        </div>
+            <div className="right">
+
+                <div>
+                    <li>Mail Us:</li>
+                    <li>Registered Office Address:</li>
+                    <li>Buildings Alyssa, Begonia &</li>
+                    <li>Clove Embassy Tech Village,</li>
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                    <li>Bengaluru, 560103,</li>
+                    <li>Karnataka, India</li>
+                </div>
+
+                <div>
+                    <li>Registered Office Address:</li>
+                    <li>Flipkart Internet Private Limited,</li>
+                    <li>Buildings Alyssa, Begonia &</li>
+                    <li>Clove Embassy Tech Village,</li>
+                    <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                    <li>Bengaluru, 560103,</li>
+                    <li>Karnataka, India</li>
+                    <li>CIN : U51109KA2012PTC066107</li>
+                    <li>Telephone: 044-45614700</li>
+                </div>
+
+            </div>
 
         </div>
         </>

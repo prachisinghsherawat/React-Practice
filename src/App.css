@@ -44,8 +44,7 @@ h1{
 /* -------------------------- Footer --------------------------------------------------------------- */
 
 .footerDiv{
-  padding: 22px;
-  border: 4px solid black;
+  padding: 22px; 
 }
 
 .footerDiv>p{
@@ -78,14 +77,46 @@ h1{
 
 .bottom{
   display: flex;
-  border: 4px solid rgb(7, 7, 7);
+  padding: 3% 3%;
+  font-weight: 400;
+  background-color: rgb(13, 26, 43);
+  color: rgb(233, 230, 230);
 
+}
+
+li{
+  list-style: none;
 }
 
 .left{
   display: flex;
+  justify-content: space-evenly;
+  width: 54%;
+  margin-left: -3%;
 }
 
 .right{
   display: flex;
+  justify-content: space-between;
+  width: 42%;
+}
+
+.left>div>li{
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.right>div>li{
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.left>div :nth-child(1){
+  margin-bottom: 7%;
+  color: rgb(143, 142, 142);
+}
+
+.right>div :nth-child(1){
+  margin-bottom: 5%;
+  color: rgb(153, 152, 152);
 }
