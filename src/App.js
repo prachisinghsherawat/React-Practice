@@ -5,7 +5,7 @@ import './App.css';
 // import { UseRefHook } from './Components/Hooks/UseRefHook';
 // import { UseMemoHook } from './Components/Hooks/UseMemoHook';
 // import { UseReducerHook } from './Components/Hooks/UseReducerHook';
-import { Home } from './Components/PropsDrilling/Home';
+import { Home } from './Components/MovieApp/Home';
 import { Footer } from './Components/Footer/Footer';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       {/* <UseRefHook /> */}
       {/* <UseMemoHook /> */}
       {/* <UseReducerHook /> */}
-      {/* <Home /> */}
+      <Home />
       <Footer />
     </div>
 
