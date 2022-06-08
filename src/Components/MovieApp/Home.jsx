@@ -64,7 +64,7 @@ export const Home = () => {
             <li onClick={() => MovieCheck("romantic")}>Romantic</li>
         </div>
 
-        
+
 
 
         {/* ------------------------------------- Normal Rendering -------------------------------------------- */}
@@ -89,7 +89,7 @@ export const Home = () => {
 
         <div className="homePage">
             
-            {!filterIs ? 
+            {filterIs.length ? 
             
                 filterIs.map((el)=>(
                     <div className="imgBox">
