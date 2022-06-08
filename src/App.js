@@ -7,8 +7,10 @@ import './App.css';
 // import { UseReducerHook } from './Components/Hooks/UseReducerHook';
 import { Home } from './Components/MovieApp/Home';
 import { Footer } from './Components/Footer/Footer';
+import { AllRoutes } from './Components/AllRoutes/AllRoutes';
 
 function App() {
+  
   return (
 
     <div className="App">
@@ -16,8 +18,8 @@ function App() {
       {/* <UseRefHook /> */}
       {/* <UseMemoHook /> */}
       {/* <UseReducerHook /> */}
-      <Home />
-      <Footer />
+
+      <AllRoutes />
     </div>
 
   );
