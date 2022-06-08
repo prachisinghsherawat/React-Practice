@@ -7,8 +7,8 @@ export const AllRoutes = () => {
     return(
 
         <Routes>
-            <Route path="./" element={<Home />} />
-            <Route path="./details" element={<HomeDetails />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/details" element={<HomeDetails />} />
         </Routes>
     )
 }

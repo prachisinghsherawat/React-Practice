@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react"
+import { Footer } from "../Footer/Footer";
 
 
 export const Home = () => {
@@ -112,6 +113,8 @@ export const Home = () => {
             }
 
         </div>
+
+        <Footer />
 
         </>
     )
