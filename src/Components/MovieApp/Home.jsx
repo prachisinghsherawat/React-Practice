@@ -6,14 +6,17 @@ import { useState } from "react"
 export const Home = () => {
 
     const [movieData,setMovieData] = useState([]);
-    const [movie , setMovie] = useState("")
+    //const [movie , setMovie] = useState("");                      // for backend
 
-    useEffect(() => {getData()},[movie]) 
+    const [filterIs , setFilterIs] = useState([])
+
+    // useEffect(() => {getData()},[movie])                         // for backend
+    useEffect(() => {getData()},[]) 
 
 
-    
 
-    // ------------------------ Using Backend ----------------------------------------------------------->
+
+    // ------------------------ Filter Using Backend ----------------------------------------------------------->
 
 
 
@@ -28,8 +31,23 @@ export const Home = () => {
         
     // }
 
-    const MovieCheck = (el) => {
-        setMovie(el)
+
+
+
+
+    // -------------------------- Filter From Frontend ----------------------------------------------->
+
+
+    const getData = () => {
+        axios.get(`http://localhost:8080/movies`).then((res)=>setMovieData(res.data))
+    }
+
+
+    const MovieCheck = (type) => {
+         
+        let movieFilter = movieData.filter((el) => el.type == type)
+        console.log(movieFilter)
+        setFilterIs([...movieFilter])
     }
 
 
@@ -46,7 +64,13 @@ export const Home = () => {
             <li onClick={() => MovieCheck("romantic")}>Romantic</li>
         </div>
 
-        <div className="homePage">
+        
+
+
+        {/* ------------------------------------- Normal Rendering -------------------------------------------- */}
+
+
+        {/* <div className="homePage">
             {movieData.map((el)=>(
 
                 <div className="imgBox">
@@ -54,6 +78,39 @@ export const Home = () => {
                 </div>
         
             ))}
+        </div> */}
+
+
+
+
+
+        {/* --------------------------------- Conditional Rendering ------------------------------------------- */}
+
+
+        <div className="homePage">
+            
+            {!filterIs ? 
+            
+                filterIs.map((el)=>(
+                    <div className="imgBox">
+                        <img id="imgIs" src={el.img}/>
+                    </div>
+
+                ))
+
+                :
+
+                movieData.map((el)=>(
+
+                    <div className="imgBox">
+                        <img id="imgIs" src={el.img}/>
+                    </div>
+            
+                ))
+
+
+            }
+
         </div>
 
         </>
