@@ -6,7 +6,6 @@ import { useEffect } from "react"
 export const Movies = () => {
 
     const [movData , setMovData] =([])
-
     useEffect(() => { getData()},[])
 
     const getData = () => {
