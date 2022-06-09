@@ -57,12 +57,12 @@ export const Home = () => {
         <>
 
         <div className="nav">
-            <li onClick={() => MovieCheck("")}>Home</li>
-            <li onClick={() => MovieCheck("comedy")}>Comedy</li>
-            <li onClick={() => MovieCheck("thrilled")}>Thrilled</li>
-            <li onClick={() => MovieCheck("action")}>Action</li>
-            <li onClick={() => MovieCheck("history")}>History</li>
-            <li onClick={() => MovieCheck("romantic")}>Romantic</li>
+            <li onClick={() => MovieCheck("")}>HOME</li>
+            <li onClick={() => MovieCheck("comedy")}>COMEDY</li>
+            <li onClick={() => MovieCheck("thrilled")}>THRILLER</li>
+            <li onClick={() => MovieCheck("action")}>ACTION</li>
+            <li onClick={() => MovieCheck("history")}>HISTORY</li>
+            <li onClick={() => MovieCheck("romantic")}>ROMANTIC</li>
         </div>
 
 
