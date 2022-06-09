@@ -15,6 +15,8 @@ export const Movies = () => {
             <li>Romantic</li>
             <li>History</li>
         </div>
+
+        
         </>
         
     )

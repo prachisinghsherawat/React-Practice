@@ -4,6 +4,7 @@ import { Route , Routes } from "react-router"
 import { Movies } from "../MovieApp/Movie"
 
 export const AllRoutes = () => {
+    
 
     return(
 
