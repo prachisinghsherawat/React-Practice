@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react"
+import { useNavigate } from "react-router";
 import { Footer } from "../Footer/Footer";
 
 
@@ -15,6 +16,7 @@ export const Home = () => {
     useEffect(() => {getData()},[]) 
 
 
+    const navigate = useNavigate()
 
 
     // ------------------------ Filter Using Backend ----------------------------------------------------------->
@@ -93,7 +95,7 @@ export const Home = () => {
             {filterIs.length ? 
             
                 filterIs.map((el)=>(
-                    <div className="imgBox">
+                    <div onClick={()=> navigate("/details")} className="imgBox">
                         <img id="imgIs" src={el.img}/>
                     </div>
 
@@ -103,7 +105,7 @@ export const Home = () => {
 
                 movieData.map((el)=>(
 
-                    <div className="imgBox">
+                    <div onClick={()=> navigate("/details")} className="imgBox">
                         <img id="imgIs" src={el.img}/>
                     </div>
             
