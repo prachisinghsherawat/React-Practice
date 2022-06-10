@@ -8,18 +8,20 @@ import { Sorting } from "./Sorting";
 
 export const Home = () => {
 
+    const [sort , setSort] = useState("")
+
     const [movieData,setMovieData] = useState([]);
     //const [movie , setMovie] = useState("");                      // for backend
 
     const [filterIs , setFilterIs] = useState([])
 
     // useEffect(() => {getData()},[movie])                         // for backend
-    useEffect(() => {getData()},[]) 
+    useEffect(() => {getData()},[sort]) 
 
 
     const navigate = useNavigate()
 
-    const [sort , setSort] = useState("")
+    
 
     const sortFilter = (e) => {
         setSort(e.target.value)
@@ -49,9 +51,15 @@ export const Home = () => {
 
 
     const getData = () => {
-        axios.get(`http://localhost:8080/movies`).then((res)=>setMovieData(res.data))
-    }
+        if(sort == ""){
+            axios.get(`http://localhost:8080/movies`).then((res)=>setMovieData(res.data))
+        }
 
+        else{
+            axios.get(`http://localhost:8080/movies?_sort=name&_order=${sort}`).then((res)=>setMovieData(res.data))
+        }
+    }
+    console.log(sort)
 
     const MovieCheck = (type) => {
          
@@ -59,7 +67,6 @@ export const Home = () => {
         console.log(movieFilter)
         setFilterIs([...movieFilter])
     }
-
 
     return(
 
@@ -76,7 +83,6 @@ export const Home = () => {
 
 
         <div className="movieSort">
-
             <Sorting sortFilter = {sortFilter} sort = {sort} />
         </div>
 
