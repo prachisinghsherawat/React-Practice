@@ -26,11 +26,7 @@ export const Task = () => {
         setCityId(value)
     }
 
-    let cityFilter = (e) => {
-        
-        let findCity = cityId.filter((el) => el.value == e )
-        
-    }
+    
 
 
     return(
