@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { useState } from "react"
 
 
@@ -18,34 +19,42 @@ export const Task = () => {
     // ------------------------------------------------------------------------------------------------------>
 
 
-    const [cityId , setCityId ] = useState(1)
+    const [ catchId , setCatchId ] = useState(1)
+    const [ city , setCity ] = useState([])
 
-    let getCity = (e) => {
+    useEffect(()=> {CityFilter()},[catchId])
+
+    const getCity = (e) => {
 
         const {value} = e.target;
-        setCityId(value)
+        setCatchId(value)
     }
 
-    
+    const CityFilter = () => {
+
+        let filteredData = arr1.filter((el)=> el.id == catchId)
+        setCity([...filteredData])
+
+    }
 
 
     return(
         <>
 
-        <label>Countries</label>
+        <label>Countries : </label>
 
-        <select  onChange={getCity}>
+        <select onChange={getCity}>
 
            {arr.map((el) => (
                <option value={el.id}>{el.country}</option>
            ))}
-        </select>
+        </select><br /><br />
 
-        <label>Cities</label>
+        <label>Cities : </label>
 
         <select>
-           {arr1.map((el) => (
-               <option>{el.cities}</option>
+           {city.map((el) => (
+               <option>{el.city}</option>
            ))}
         </select>
         
