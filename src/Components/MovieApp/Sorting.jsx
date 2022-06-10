@@ -6,7 +6,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export function Sorting({sortFilter}) {
+export function Sorting({sortFilter , sort}) {
 
   return (
     <div>
@@ -16,7 +16,7 @@ export function Sorting({sortFilter}) {
         <Select
           labelId="demo-simple-select-helper-label"
           id="demo-simple-select-helper"
-          value={age}
+          value={sort}
           label="Movie"
           onChange={sortFilter}
         >
