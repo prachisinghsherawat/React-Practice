@@ -6,12 +6,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export function Sorting() {
-  const [age, setAge] = React.useState('');
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+export function Sorting({sortFilter}) {
 
   return (
     <div>
@@ -22,8 +17,8 @@ export function Sorting() {
           labelId="demo-simple-select-helper-label"
           id="demo-simple-select-helper"
           value={age}
-          label="Age"
-          onChange={handleChange}
+          label="Movie"
+          onChange={sortFilter}
         >
           <MenuItem value="">
             <em>None</em>
