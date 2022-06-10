@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react"
 import { useNavigate } from "react-router";
 import { Footer } from "../Footer/Footer";
+import { Sorting } from "./Sorting";
 
 
 export const Home = () => {
@@ -68,6 +69,9 @@ export const Home = () => {
         </div>
 
 
+        <div className="movieSort">
+            <Sorting />
+        </div>
 
 
         {/* ------------------------------------- Normal Rendering -------------------------------------------- */}

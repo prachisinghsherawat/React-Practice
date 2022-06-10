@@ -134,9 +134,13 @@ li{
   margin-top: 15%;
   width: 35%;
   height: 300px;
-  
+ 
 }
 
 .flexDiv{
   display: flex;
+}
+
+.movieSort{
+  margin-left: 88%;
 }
