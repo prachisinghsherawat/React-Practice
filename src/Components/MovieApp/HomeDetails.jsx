@@ -1,9 +1,10 @@
+import { useParams } from "react-router"
 
 
 
 export const HomeDetails = () => {
 
-
+    const {id} = useParams()
 
     return(
         

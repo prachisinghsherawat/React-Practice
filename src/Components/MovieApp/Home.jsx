@@ -95,7 +95,7 @@ export const Home = () => {
             {filterIs.length ? 
             
                 filterIs.map((el)=>(
-                    <div onClick={()=> navigate("/details")} className="imgBox">
+                    <div onClick={()=> navigate(`/details/${el.id}`)} className="imgBox">
                         <img id="imgIs" src={el.img}/>
                     </div>
 
@@ -105,7 +105,7 @@ export const Home = () => {
 
                 movieData.map((el)=>(
 
-                    <div onClick={()=> navigate("/details")} className="imgBox">
+                    <div onClick={()=> navigate(`/details/${el.id}`)} className="imgBox">
                         <img id="imgIs" src={el.img}/>
                     </div>
             
