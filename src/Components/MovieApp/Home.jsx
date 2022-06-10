@@ -21,8 +21,8 @@ export const Home = () => {
 
     const [sort , setSort] = useState("")
 
-    const sortFilter = (value) => {
-        setSort(value)
+    const sortFilter = (e) => {
+        setSort(e.target.value)
     }
 
 
@@ -77,7 +77,7 @@ export const Home = () => {
 
         <div className="movieSort">
 
-            <Sorting sortFilter = {sortFilter} />
+            <Sorting sortFilter = {sortFilter} sort = {sort} />
         </div>
 
 
