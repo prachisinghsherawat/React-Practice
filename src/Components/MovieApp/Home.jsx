@@ -19,6 +19,12 @@ export const Home = () => {
 
     const navigate = useNavigate()
 
+    const [sort , setSort] = useState("")
+
+    const sortFilter = (value) => {
+        setSort(value)
+    }
+
 
     // ------------------------ Filter Using Backend ----------------------------------------------------------->
 
@@ -70,7 +76,8 @@ export const Home = () => {
 
 
         <div className="movieSort">
-            <Sorting />
+
+            <Sorting sortFilter = {sortFilter} />
         </div>
 
 

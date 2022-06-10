@@ -28,8 +28,8 @@ export function Sorting() {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          <MenuItem value={10}>Ascending</MenuItem>
-          <MenuItem value={20}>Decending</MenuItem>
+          <MenuItem value={"asc"}>Ascending</MenuItem>
+          <MenuItem value={"desc"}>Decending</MenuItem>
         </Select>
         
       </FormControl>
