@@ -2,7 +2,7 @@ import { Home } from "../MovieApp/Home"
 import { HomeDetails } from "../MovieApp/HomeDetails"
 import { Route , Routes } from "react-router"
 import { Movies } from "../MovieApp/Movie"
-import { Task } from "../Revision/Task"
+import { Task } from "../Revision/Task1"
 
 export const AllRoutes = () => {
     
