@@ -121,18 +121,20 @@ li{
   color: rgb(153, 152, 152);
 }
 
+
+/* --------------------------------------------------------------------------------------------------- */
+
 .bigImg{
   margin-top: 6%;
   width: 60%;
   height: 620px;
-  border:  3px solid black;
 }
 
-.right{
-  margin-top: 6%;
+.rightBox{
+  margin-top: 15%;
   width: 35%;
-  height: 500px;
-  border:  3px solid black;
+  height: 300px;
+  
 }
 
 .flexDiv{
