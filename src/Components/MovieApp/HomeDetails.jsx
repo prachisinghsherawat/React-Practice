@@ -25,16 +25,16 @@ export const HomeDetails = () => {
         <>
         <div className="flexDiv">
 
-            <div className="left">
+            <div className="leftBox">
                 <div className="bigImg">
                     <img id="imgIs" src={details.img} />
                 </div>
             </div>
 
-            <div className="right">
+            <div className="rightBox">
                 <h1>{details.name}</h1>
-                <p>{details.type}</p>
-                <h3>{details.rating}</h3>
+                <h2>{details.type}</h2>
+                <h1>{details.rating}</h1>
                 
             </div>
             
