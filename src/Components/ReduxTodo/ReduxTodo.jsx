@@ -8,10 +8,15 @@ export const ReduxTodo = () => {
     const [todo , setTodo] = useState([])
     useEffect(()=> {getData()},[])
 
+
+
     const [data , setData] = useState({
         item : "",
         status : false
     })
+
+
+    // ------------------------------------- POST DATA -------------------------------------------------------------------
 
 
     const HandleSubmit = () => {
@@ -25,9 +30,18 @@ export const ReduxTodo = () => {
     }
 
 
+
+    // ------------------------------------- GET DATA -------------------------------------------------------------------
+
+
     const getData = () => {
         axios.get("http://localhost:8080/todos").then((res)=> setTodo(res.data))
     }
+
+
+
+
+    // ------------------------------------- EDIT DATA -------------------------------------------------------------------
 
 
     const setStatus = (id ,status) => {
@@ -38,9 +52,17 @@ export const ReduxTodo = () => {
     }
 
 
+
+
+    // ------------------------------------- DELETE DATA -------------------------------------------------------------------
+
+
+
     const DeleteTodo = (id) => {
-        axios.delete(`http://localhost:8080/todos/${id}`)
+        axios.delete(`http://localhost:8080/todos/${id}`).then(()=> getData())
     }
+
+    
 
 
     return(
@@ -56,7 +78,18 @@ export const ReduxTodo = () => {
             {todo.map((el)=>(
 
                 <div>
-                    {el.id}. {el.item}  {el.status ? <button onClick={()=> setStatus(el.id, el.status)}>Done</button> : <button onClick={()=> setStatus(el.id, el.status)} >Not Done</button>  }   <button onClick={ () => DeleteTodo(id)}>Delete</button>
+                    {el.id}. {el.item} 
+
+                    {el.status ? 
+
+                        <button onClick={()=> setStatus(el.id, el.status)}>Done</button>
+                     : 
+                        <button onClick={()=> setStatus(el.id, el.status)} >Not Done</button>  
+
+                    }  
+                                               
+                        <button onClick={ () => DeleteTodo(el.id)}>Delete</button>
+
                 </div>
 
             ))}
