@@ -1,110 +1,100 @@
-
-{ "movies" : [
-
+{
+  "movies": [
     {
-        "id" : 1,
-        "img" : "https://i.pinimg.com/736x/bb/09/18/bb0918530286ed129933d2354fc33943.jpg" ,
-        "name" : "Tamasha",
-        "rating" : "5",
-        "type" : "romantic"
+      "id": 1,
+      "img": "https://i.pinimg.com/736x/bb/09/18/bb0918530286ed129933d2354fc33943.jpg",
+      "name": "Tamasha",
+      "rating": "5",
+      "type": "romantic"
     },
-
     {
-        "id" : 2,
-        "img" : "https://m.media-amazon.com/images/M/MV5BZmVhN2JlYjEtZWFkOS00YzE0LThiNDMtMGI3NDA1MTk2ZDQ2XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" ,
-        "name" : "Raazi",
-        "rating" : "4",
-        "type" : "thrilled"
+      "id": 2,
+      "img": "https://m.media-amazon.com/images/M/MV5BZmVhN2JlYjEtZWFkOS00YzE0LThiNDMtMGI3NDA1MTk2ZDQ2XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+      "name": "Raazi",
+      "rating": "4",
+      "type": "thrilled"
     },
-
     {
-        "id" : 3,
-        "img" : "https://www.pinkvilla.com/imageresize/Golmaal-Again-Occupancy.jpg?width=752&format=webp&t=pvorg" ,
-        "name" : "Golmaal Again",
-        "rating" : "5",
-        "type" : "comedy"
+      "id": 3,
+      "img": "https://www.pinkvilla.com/imageresize/Golmaal-Again-Occupancy.jpg?width=752&format=webp&t=pvorg",
+      "name": "Golmaal Again",
+      "rating": "5",
+      "type": "comedy"
     },
-    
     {
-        "id" : 4,
-        "img" : "https://www.scrolldroll.com/wp-content/uploads/2021/11/padmaavat-Indian-historical-movies-scaled.jpg" ,
-        "name" : "Padmavat",
-        "rating" : "4",
-        "type" : "history"
+      "id": 4,
+      "img": "https://www.scrolldroll.com/wp-content/uploads/2021/11/padmaavat-Indian-historical-movies-scaled.jpg",
+      "name": "Padmavat",
+      "rating": "4",
+      "type": "history"
     },
-
     {
-        "id" : 5,
-        "img" : "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKbRuJq6etcHflMhFORZbRmZMqfnfZEldqY53jbin9dPhajzMa" ,
-        "name" : "Entertainment",
-        "rating" : "3",
-        "type" : "comedy"
+      "id": 5,
+      "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKbRuJq6etcHflMhFORZbRmZMqfnfZEldqY53jbin9dPhajzMa",
+      "name": "Entertainment",
+      "rating": "3",
+      "type": "comedy"
     },
-
     {
-        "id" : 6,
-        "img" : "https://img.gurugamer.com/resize/740x-/2020/08/17/bajirao-mastani-7ff9.jpg" ,
-        "name" : "Bajirao Mastaani",
-        "rating" : "3",
-        "type" : "history"
+      "id": 6,
+      "img": "https://img.gurugamer.com/resize/740x-/2020/08/17/bajirao-mastani-7ff9.jpg",
+      "name": "Bajirao Mastaani",
+      "rating": "3",
+      "type": "history"
     },
-
     {
-        "id" : 7,
-        "img" : "https://images.news18.com/ibnlive/uploads/2021/09/antim-poster.jpg" ,
-        "name" : "Antim",
-        "rating" : "4",
-        "type" : "action"
+      "id": 7,
+      "img": "https://images.news18.com/ibnlive/uploads/2021/09/antim-poster.jpg",
+      "name": "Antim",
+      "rating": "4",
+      "type": "action"
     },
-
     {
-        "id" : 8,
-        "img" : "https://www.scrolldroll.com/wp-content/uploads/2021/09/baby-Indian-spy-thriller-movies.jpg" ,
-        "name" : "Baby",
-        "rating" : "2",
-        "type" : "thrilled"
+      "id": 8,
+      "img": "https://www.scrolldroll.com/wp-content/uploads/2021/09/baby-Indian-spy-thriller-movies.jpg",
+      "name": "Baby",
+      "rating": "2",
+      "type": "thrilled"
     },
-
     {
-        "id" : 9,
-        "img" : "https://www.scrolldroll.com/wp-content/uploads/2021/03/War-Bollywood-action-movies.jpg" ,
-        "name" : "WAR",
-        "rating" : "3",
-        "type" : "action"
+      "id": 9,
+      "img": "https://www.scrolldroll.com/wp-content/uploads/2021/03/War-Bollywood-action-movies.jpg",
+      "name": "WAR",
+      "rating": "3",
+      "type": "action"
     },
-
     {
-        "id" : 10,
-        "img" : "https://images-na.ssl-images-amazon.com/images/I/71epG0m0KZL._RI_.jpg" ,
-        "name" : "Jab We Met",
-        "rating" : "5",
-        "type" : "romantic"
+      "id": 10,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71epG0m0KZL._RI_.jpg",
+      "name": "Jab We Met",
+      "rating": "5",
+      "type": "romantic"
     },
-
     {
-        "id" : 11,
-        "img": "https://m.media-amazon.com/images/M/MV5BOGI1N2QwNjYtMjQzOS00NjZiLTg1YzEtMDVjZGY0YjkwODNjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" ,
-        "name" : "Prathviraj",
-        "rating" : "4",
-        "type" : "history"
+      "id": 11,
+      "img": "https://m.media-amazon.com/images/M/MV5BOGI1N2QwNjYtMjQzOS00NjZiLTg1YzEtMDVjZGY0YjkwODNjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+      "name": "Prathviraj",
+      "rating": "4",
+      "type": "history"
     },
-
     {
-        "id" : 12,
-        "img" : "https://i.pinimg.com/originals/4a/c8/d3/4ac8d368ca9e3b8806cd6926c8152d37.png" ,
-        "name" : "Yeh Jawani Hai Deewani",
-        "rating" : "5",
-        "type" : "romantic"
+      "id": 12,
+      "img": "https://i.pinimg.com/originals/4a/c8/d3/4ac8d368ca9e3b8806cd6926c8152d37.png",
+      "name": "Yeh Jawani Hai Deewani",
+      "rating": "5",
+      "type": "romantic"
     }
-
-   
-              
-],
-
-
-"todos" : []
-
-
+  ],
+  "todos": [
+    {
+      "item": "maggie",
+      "status": false,
+      "id": 1
+    },
+    {
+      "item": "ice-crem",
+      "status": false,
+      "id": 2
+    }
+  ]
 }
-
-
