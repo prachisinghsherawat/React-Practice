@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 
 
-export const ReduxTodo = () => {
+export const TodoList = () => {
 
     const [todo , setTodo] = useState([])
     useEffect(()=> {getData()},[])
@@ -62,7 +62,7 @@ export const ReduxTodo = () => {
         axios.delete(`http://localhost:8080/todos/${id}`).then(()=> getData())
     }
 
-    
+
 
 
     return(

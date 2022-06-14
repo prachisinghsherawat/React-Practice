@@ -5,7 +5,7 @@ import { Movies } from "../MovieApp/Movie"
 import { Task } from "../Revision/Task1"
 import { HomePage } from "../Revision/Task2/HomePage"
 import { Grocery } from "../GroceryList/Grocery"
-import { ReduxTodo } from "../ReduxTodo/ReduxTodo"
+import { ReduxTodo, TodoList } from "../TodoList/TodoList"
 
 export const AllRoutes = () => {
     
@@ -18,7 +18,7 @@ export const AllRoutes = () => {
             <Route path="/task1" element={<Task/>} />
             <Route path="/task2" element={<HomePage/>} />
             <Route path="/grocery" element={<Grocery/>} />
-            <Route path="/todo" element={<ReduxTodo/>} />
+            <Route path="/todo" element={<TodoList/>} />
         </Routes>
     )
 }
