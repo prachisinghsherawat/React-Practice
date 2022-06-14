@@ -4,7 +4,8 @@ import { useState } from "react"
 export const Grocery = () => {
 
 
-    
+
+    const [flag , setFlag] = useState(false)
     const [ arr , setArr] = useState([])
 
     const [item , setItem] = useState({
@@ -31,8 +32,11 @@ export const Grocery = () => {
         setArr([...arr])
     }
 
-    const setStatus = () => {
+    const setStatus = (index) => {
 
+        let {status} = arr[index]
+        status = !flag
+        console.log(status)
     }
 
 
@@ -49,7 +53,7 @@ export const Grocery = () => {
                 {arr.map((el , index) => (
                     
                    <div>
-                        {index+1}  {el.food}  <button onClick={setStatus}>{el.status}</button>  <button onClick={()=>{Delete(index)}}>Delete</button>
+                        {index+1}  {el.food}  <button onClick={()=>setStatus(index)}>{el.status}</button>  <button onClick={()=>{Delete(index)}}>Delete</button>
                     </div>
                 ))}
            
