@@ -32,12 +32,16 @@ export const Grocery = () => {
         setArr([...arr])
     }
 
-    const setStatus = (index) => {
+    const setStatus = (index , status) => {
 
-        let {status} = arr[index]
-        status = !flag
-        console.log(status)
+        status = !status
+        let data = status
+        setArr([...arr , {data}]) 
+
     }
+
+    console.log(arr)
+    
 
 
     return(
@@ -53,7 +57,7 @@ export const Grocery = () => {
                 {arr.map((el , index) => (
                     
                    <div>
-                        {index+1}  {el.food}  <button onClick={()=>setStatus(index)}>{el.status}</button>  <button onClick={()=>{Delete(index)}}>Delete</button>
+                        {index+1}  {el.food}  <button onClick={()=>setStatus(index,el.status)}>{el.status}</button>  <button onClick={()=>{Delete(index)}}>Delete</button>
                     </div>
                 ))}
            
