@@ -87,9 +87,19 @@
   ],
   "todos": [
     {
-      "item": "maggie",
+      "food": "maggie",
       "status": false,
       "id": 1
+    },
+    {
+      "food": "cake",
+      "status": false,
+      "id": 2
+    },
+    {
+      "food": "pineapple cake",
+      "status": false,
+      "id": 3
     }
   ]
 }
