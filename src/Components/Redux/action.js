@@ -17,7 +17,7 @@ const GetTodo = (payload) => ({
 
 export const HandleSubmit = (data) => (dispatch) => {
 
-    axios.post("http://localhost:8080/todos" , data ).then(() => getData())
+    axios.post("http://localhost:8080/todos" , data ).then(() => dispatch(getData()))
 }
 
 export const getData = () => (dispatch) => {
