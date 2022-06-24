@@ -1,7 +1,9 @@
 import { useState } from "react";
 
 
-export const Task3 = () => {
+export const Task3 = (
+    
+) => {
 
     let students = [
         { name: 'student1', Maths: 30, Science: 50 },
@@ -15,17 +17,14 @@ export const Task3 = () => {
 
         <>
 
-        <div className="students">
-            {students.map((el)=>(
+        <div>
+            {students.map(({name , Maths , Science} ,index) => {
+                if (Maths && Science >=50) {
+                    return <h2 key={index}>{name - "Passed"}</h2>;
+                }
 
-                <div>
-                    {el.name} - {el.Maths} - {el.Science}
-                </div>
-            ))}
-        </div>
-
-        <div className="students">
-           
+                    return <h2 key={index}>{name - "Failed"}</h2>;
+            })}
         </div>
         
         </>
