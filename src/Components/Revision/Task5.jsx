@@ -7,6 +7,8 @@ import { useState } from "react"
 export const Task5 = () => {
 
     const [data , setData] = useState([])
+    const [search , setSearch] = useState([])
+
     useEffect(()=>{getData()},[])
 
     const getData = () => {
@@ -15,12 +17,18 @@ export const Task5 = () => {
     console.log(data)
 
 
+    const HandleSearch = () => {
+        setSearch(e.target.value)
+    }
+    console.log(search)
+
+
     return(
 
         <>
 
         <div className="todo">
-        <input type="text" placeholder="enter your cartoon" id="cartoon"  />
+        <input type="text" placeholder="enter your cartoon" id="cartoon" onChange={HandleSearch}  />
         <button>Submit</button>
         </div>
         
