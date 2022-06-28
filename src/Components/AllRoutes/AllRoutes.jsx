@@ -9,6 +9,7 @@ import { TodoList } from "../TodoList/TodoList"
 import { TodoRedux } from "../TodoRedux/TodoRedux"
 import { Task3 } from "../Revision/Task3"
 import { Task4 } from "../Revision/Task4"
+import { Task5 } from "../Revision/Task5"
 
 export const AllRoutes = () => {
     
@@ -26,6 +27,7 @@ export const AllRoutes = () => {
             <Route path="/task2" element={<HomePage/>} />
             <Route path="/task3" element={<Task3/>} />
             <Route path="/task4" element={<Task4 />} />
+            <Route path="/task5" element={<Task5 />} />
 
         </Routes>
     )
