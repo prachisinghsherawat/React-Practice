@@ -9,18 +9,16 @@ export const Task5 = () => {
     const [data , setData] = useState([])
     const [search , setSearch] = useState([])
 
-    useEffect(()=>{getData()},[])
-
     const getData = () => {
-        axios.get("https://pokeapi.co/api/v2/pokemon").then((res) => setData(res.data))
+        axios.get("").then((res) => setData(res.data))
     }
     console.log(data)
 
 
-    const HandleSearch = () => {
+    const HandleSearch = (e) => {
         setSearch(e.target.value)
     }
-    console.log(search)
+    //console.log(search)
 
 
     return(
@@ -29,7 +27,7 @@ export const Task5 = () => {
 
         <div className="todo">
         <input type="text" placeholder="enter your cartoon" id="cartoon" onChange={HandleSearch}  />
-        <button>Submit</button>
+        <button onClick={getData}>Submit</button>
         </div>
         
         </>
