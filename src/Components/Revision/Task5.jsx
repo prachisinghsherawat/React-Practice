@@ -26,8 +26,10 @@ export const Task5 = () => {
         <>
 
         <div className="todo">
+
         <input type="text" placeholder="enter your cartoon" id="cartoon" onChange={HandleSearch}  />
         <button onClick={getData}>Submit</button>
+        
         </div>
         
         </>
