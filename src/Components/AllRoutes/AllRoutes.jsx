@@ -12,6 +12,8 @@ import { Task4 } from "../Revision/Task4"
 import { Task5 } from "../Revision/Task5"
 import { Task6 } from "../Revision/Task6"
 import { Task7 } from "../Revision/Task7"
+import { Product } from "../CompanyTask/Product"
+import { Cart } from "../CompanyTask/Cart"
 
 export const AllRoutes = () => {
     
@@ -24,6 +26,9 @@ export const AllRoutes = () => {
             <Route path="/grocery" element={<Grocery/>} />
             <Route path="/todo" element={<TodoList/>} />
             <Route path="/todoredux" element={<TodoRedux/>} />
+
+            <Route path="/products" element={<Product/>} />
+            <Route path="/cart" element={<Cart/>} />
 
             <Route path="/task1" element={<Task/>} />
             <Route path="/task2" element={<HomePage/>} />
