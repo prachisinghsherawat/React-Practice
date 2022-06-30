@@ -31,7 +31,7 @@ export const AllRoutes = () => {
             <Route path="/task4" element={<Task4 />} />
             <Route path="/task5" element={<Task5 />} />
             <Route path="/task6" element={<Task6 />} />
-            <Route path="/task7" element={<Task7 />} />
+            <Route path="/task7/:id" element={<Task7 />} />
 
         </Routes>
     )

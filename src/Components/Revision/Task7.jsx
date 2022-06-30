@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useState } from "react"
 import { useParams } from "react-router"
+import axios from "axios"
 
 
 export const Task7 = () => {
@@ -22,6 +23,7 @@ export const Task7 = () => {
         let filteredData = data.filter((el) => el.idCategory == id)
         setStored([...filteredData])
     }
+    //console.log(stored)
 
     return(
 
