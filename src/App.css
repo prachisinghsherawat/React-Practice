@@ -171,3 +171,14 @@ li{
 .grid>div{
   border: 1px solid black;
 }
+
+#box{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Products{
+  margin-top: 9%;
+  width: 50%;
+  border: 1px solid black;
+}
