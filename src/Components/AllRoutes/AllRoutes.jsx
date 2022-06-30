@@ -10,6 +10,7 @@ import { TodoRedux } from "../TodoRedux/TodoRedux"
 import { Task3 } from "../Revision/Task3"
 import { Task4 } from "../Revision/Task4"
 import { Task5 } from "../Revision/Task5"
+import { Task6 } from "../Revision/Task6"
 
 export const AllRoutes = () => {
     
@@ -28,6 +29,7 @@ export const AllRoutes = () => {
             <Route path="/task3" element={<Task3/>} />
             <Route path="/task4" element={<Task4 />} />
             <Route path="/task5" element={<Task5 />} />
+            <Route path="/task6" element={<Task6 />} />
 
         </Routes>
     )
