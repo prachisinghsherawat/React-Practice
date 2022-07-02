@@ -182,3 +182,15 @@ li{
   width: 50%;
   border: 1px solid black;
 }
+
+.Cart{
+  margin-top: 9%;
+  width: 30%;
+  border: 1px solid black;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

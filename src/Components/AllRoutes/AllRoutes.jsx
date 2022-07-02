@@ -13,7 +13,8 @@ import { Task5 } from "../Revision/Task5"
 import { Task6 } from "../Revision/Task6"
 import { Task7 } from "../Revision/Task7"
 import { Product } from "../CompanyTask/Product"
-import { Cart } from "../CompanyTask/Cart"
+import {Prod} from "../CompanyTask/Prod"
+
 
 export const AllRoutes = () => {
     
@@ -28,7 +29,7 @@ export const AllRoutes = () => {
             <Route path="/todoredux" element={<TodoRedux/>} />
 
             <Route path="/products" element={<Product/>} />
-            <Route path="/cart" element={<Cart/>} />
+            <Route path="/prod" element={<Prod/>} />
 
             <Route path="/task1" element={<Task/>} />
             <Route path="/task2" element={<HomePage/>} />
