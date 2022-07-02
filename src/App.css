@@ -172,18 +172,18 @@ li{
   border: 1px solid black;
 }
 
-#box{
+.product>div{
   display: flex;
   justify-content: space-evenly;
 }
 
-.Products{
+.product{
   margin-top: 9%;
   width: 50%;
   border: 1px solid black;
 }
 
-.Cart{
+.cart{
   margin-top: 9%;
   width: 30%;
   border: 1px solid black;
