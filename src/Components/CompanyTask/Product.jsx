@@ -11,6 +11,7 @@ export const Product = () => {
     ]
 
     const [item,setItem] = useState(products)
+    const [total,setTotal] = useState(products)
 
     const Decrement = (id) => {
 
@@ -18,6 +19,9 @@ export const Product = () => {
             if(el.id == id){
                 el.quantity--;
             }
+
+            // var all = 600
+            // all+= (el*quantity + el.price)
         })
 
         setItem([...item])
@@ -66,6 +70,7 @@ export const Product = () => {
                         <p>{el.price * el.quantity}</p>
                     </div>
                 ))}
+                <p>Total : </p>
             </div>
 
         </div>
