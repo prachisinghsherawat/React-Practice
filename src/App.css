@@ -183,6 +183,11 @@ li{
   border: 1px solid black;
 }
 
+.cart>div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .cart{
   margin-top: 9%;
   width: 30%;
