@@ -13,6 +13,8 @@ import { Task5 } from "../Revision/Task5"
 import { Task6 } from "../Revision/Task6"
 import { Task7 } from "../Revision/Task7"
 import { Product } from "../CompanyTask/Product"
+import { SignUp } from "../Validations/SignUp"
+import { Login } from "../Validations/Login"
 
 
 export const AllRoutes = () => {
@@ -36,6 +38,9 @@ export const AllRoutes = () => {
             <Route path="/task5" element={<Task5 />} />
             <Route path="/task6" element={<Task6 />} />
             <Route path="/task7/:id" element={<Task7 />} />
+
+            <Route path="/signup" element={< SignUp/>} />
+            <Route path="/login" element={< Login/>} />
 
         </Routes>
     )
