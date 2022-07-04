@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 
 export function SignUp() {
   return (
-    <Box
+    <Box id=''
       component="form"
       sx={{
         '& > :not(style)': { m: 1, width: '25ch' },
