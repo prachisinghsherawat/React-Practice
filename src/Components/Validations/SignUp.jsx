@@ -45,6 +45,9 @@ export function SignUp() {
     if(!val.password){
       err.password = "password is required"
     }
+    else if(val.password.length <6){
+      err.password = "password should be more than 6 characters "
+    }
     return err
   }
   
@@ -66,16 +69,18 @@ export function SignUp() {
       autoComplete="off"
     >
       <TextField id="name" label="Name" variant="outlined" onChange={HandleChange} />
+      <p className='red'>{errors.name}</p>
       <TextField id="email" label="Email" variant="outlined" onChange={HandleChange} />
+      <p className='red'>{errors.email}</p>
       <TextField id="password" label="Password" variant="outlined" onChange={HandleChange} />
+      <p className='red'>{errors.password}</p>
 
     
       <Stack spacing={2} direction="row">
-        <Button variant="contained">SUBMIT HERE</Button>
+        <Button onClick={HandleSubmit} variant="contained">SUBMIT HERE</Button>
       </Stack>
 
-
-      
+     
     </Box>
     </div>
 
