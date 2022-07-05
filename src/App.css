@@ -203,3 +203,9 @@ li{
 .red{
   color: red;
 }
+
+#box{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
