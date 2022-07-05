@@ -1,7 +1,10 @@
+import { useState } from "react"
 
 
 
 export const RandomColour = () => {
+
+    const [random , setRandom] = useState()
 
     return(
 

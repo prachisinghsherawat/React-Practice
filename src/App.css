@@ -209,3 +209,17 @@ li{
   width: 50%;
   justify-content: space-between;
 }
+
+.colorBox{
+  margin: auto;
+  margin-top: 11%;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 500px;
+}
+
+.colorBox>div{
+  width: 40%;
+  border: 2px solid black;
+}
