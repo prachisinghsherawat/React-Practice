@@ -15,6 +15,7 @@ import { Task7 } from "../Revision/Task7"
 import { Product } from "../CompanyTask/Product"
 import { SignUp } from "../Validations/SignUp"
 import { Login } from "../Validations/Login"
+import { RandomColour } from "../RandomColor/RandomColor"
 
 
 export const AllRoutes = () => {
@@ -30,6 +31,7 @@ export const AllRoutes = () => {
             <Route path="/todoredux" element={<TodoRedux/>} />
 
             <Route path="/products" element={<Product/>} />
+            <Route path="/random" element={<RandomColour/>} />
 
             <Route path="/task1" element={<Task/>} />
             <Route path="/task2" element={<HomePage/>} />
