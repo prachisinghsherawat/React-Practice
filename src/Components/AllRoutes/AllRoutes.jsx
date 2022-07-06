@@ -17,6 +17,7 @@ import { SignUp } from "../Validations/SignUp"
 import { Login } from "../Validations/Login"
 import { RandomColour } from "../RandomColor/RandomColor"
 import { ColorBox } from "../RandomColor/ColorBox"
+import { SlidingBar } from "../RandomColor/SlidingBar"
 
 
 export const AllRoutes = () => {
@@ -34,6 +35,7 @@ export const AllRoutes = () => {
             <Route path="/products" element={<Product/>} />
             <Route path="/random" element={<RandomColour/>} />
             <Route path="/box" element={<ColorBox/>} />
+            <Route path="/slider" element={<SlidingBar/>} />
 
             <Route path="/task1" element={<Task/>} />
             <Route path="/task2" element={<HomePage/>} />
