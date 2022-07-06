@@ -25,9 +25,9 @@ export const RandomColour = () => {
     }
     //console.log(random)
 
-    setInterval(() => {
-        setRandomColor()
-    },3000);
+    // setInterval(() => {
+    //     setRandomColor()
+    // },3000);
 
     return(
 
