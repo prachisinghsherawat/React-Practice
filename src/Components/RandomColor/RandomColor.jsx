@@ -4,6 +4,7 @@ import { useState } from "react"
 export const RandomColour = () => {
 
     const [random , setRandom] = useState("")
+    const [flag , setFlag] = useState(false)
 
     const setRandomColor = (val) => {
 
@@ -12,6 +13,11 @@ export const RandomColour = () => {
         
         if(val == "show"){
             document.getElementById("color").style.backgroundColor = "#" + random
+            setFlag(true)
+        }
+        else if(flag == true){
+            document.getElementById("color").style.backgroundColor = "none"
+            setFlag(false)
         }
         else{
             document.getElementById("interval").style.backgroundColor = "#" + random
