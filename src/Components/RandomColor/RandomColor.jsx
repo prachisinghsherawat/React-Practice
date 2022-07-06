@@ -1,27 +1,36 @@
 import { useState } from "react"
 
 
-
 export const RandomColour = () => {
 
     const [random , setRandom] = useState("")
 
-    const setRandomColor = () => {
+    const setRandomColor = (val) => {
 
         var randomColor = Math.floor(Math.random()*16777215).toString(16);
         setRandom(randomColor)
-
-        document.getElementById("color").style.backgroundColor = "#" + random
+        
+        if(val == "show"){
+            document.getElementById("color").style.backgroundColor = "#" + random
+        }
+        else{
+            document.getElementById("interval").style.backgroundColor = "#" + random
+        }
     }
-    console.log(random)
+    //console.log(random)
+
+    setInterval(() => {
+        setRandomColor()
+    },3000);
 
     return(
 
         <>
             <div className="colorBox">
 
-                <div id="color" onClick={setRandomColor}></div>
-                <div></div>
+                <div id="color" onClick={() => setRandomColor("show")}></div>
+
+                <div id="interval"></div>
             </div>
         </>
     )
