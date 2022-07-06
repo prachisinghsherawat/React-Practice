@@ -15,13 +15,43 @@ export function SlidingBar() {
     const HandleChange = (val) => {
 
         if(val == 10){
-            document.getElementsById("rainbow").style.backgroundColor = "red"
+            document.getElementById("rainbow").style.backgroundColor = "red"
         }
-        console.log(val)
+        else if(val == 20){
+            document.getElementById("rainbow").style.backgroundColor = "orange"
+        }
+        else if(val == 30){
+            document.getElementById("rainbow").style.backgroundColor = "yellow"
+        }
+        else if(val == 40){
+            document.getElementById("rainbow").style.backgroundColor = "cyan"
+        }
+        else if(val == 50){
+            document.getElementById("rainbow").style.backgroundColor = "green"
+        }
+        else if(val == 60){
+            document.getElementById("rainbow").style.backgroundColor = "blue"
+        }
+        else if(val == 70){
+            document.getElementById("rainbow").style.backgroundColor = "teal"
+        }
+        else if(val == 80){
+            document.getElementById("rainbow").style.backgroundColor = "tomato"
+        }
+        else if(val == 90){        
+            document.getElementById("rainbow").style.backgroundColor = "purple"
+        }
+        else if(val == 100){
+            document.getElementById("rainbow").style.backgroundColor = "pink"
+        }
+        else if(val == 110){
+            document.getElementById("rainbow").style.backgroundColor = "black"
+        }
+        
+
     }
 
-    const Colors = ["red" , "orange" , "yellow" , "pink" , "blue" , "voilet" , "purple" ,"cyan" , "green" , "black"]
-
+   
   return (
 
     <>
