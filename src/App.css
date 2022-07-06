@@ -10,6 +10,7 @@ h1{
   margin-top: 8%;
 }
 
+
 /* ---------------------------------------------------------------------------------------------------------- */
 
 .nav{
@@ -222,4 +223,11 @@ li{
 .colorBox>div{
   width: 40%;
   border: 2px solid black;
+}
+
+#slider{
+  width: 40%;
+  height: 200px;
+  margin-top: 12%;
+  border: none;
 }
