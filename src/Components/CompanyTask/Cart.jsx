@@ -1,7 +1,7 @@
 
 
 
-export const Cart = () => {
+export const Cart = ({item,total}) => {
 
     return(
         <>

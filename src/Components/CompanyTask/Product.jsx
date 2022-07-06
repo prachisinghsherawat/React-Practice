@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import { Cart } from "./Cart"
 
 
 export const Product = () => {
@@ -69,7 +70,7 @@ export const Product = () => {
 
             </div>
 
-            <Cart item={item} />
+            <Cart item={item} total ={total} />
 
         </div>
         </>
