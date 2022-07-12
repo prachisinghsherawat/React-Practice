@@ -17,6 +17,7 @@ import { Login } from "../Validations/Login"
 import { RandomColour } from "../RandomColor/RandomColor"
 import { ColorBox } from "../RandomColor/ColorBox"
 import { SlidingBar } from "../RandomColor/SlidingBar"
+import { BookApp } from "../ReduxBookApp/BookApp"
 
 
 export const AllRoutes = () => {
@@ -47,6 +48,8 @@ export const AllRoutes = () => {
 
             <Route path="/signup" element={< SignUp/>} />
             <Route path="/login" element={< Login/>} />
+
+            <Route path="/book" element={<BookApp />} />
 
         </Routes>
     )
