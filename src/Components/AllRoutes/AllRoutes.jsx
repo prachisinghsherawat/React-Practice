@@ -26,6 +26,7 @@ export const AllRoutes = () => {
     return(
 
         <Routes>
+            
             <Route path="/" element={<Home />} />
             <Route path="/details/:id" element={<HomeDetails />} />
             <Route path="/grocery" element={<Grocery/>} />
