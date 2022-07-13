@@ -7,7 +7,7 @@ const initState = {
     Books : []
 }
 
-const BookReducer = (store = initState , {type , payload}) => {
+export const BookReducer = (store = initState , {type , payload}) => {
 
     switch(type){
 
