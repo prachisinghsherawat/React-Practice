@@ -12,10 +12,19 @@ export const BookApp = () => {
     useEffect(()=> {dispatch(getData())},[])
 
     const BookDetails = useSelector((Store)=> Store.Book.Books)                  // Store ---> Reducer
-    console.log(BookDetails)           
+    //console.log(BookDetails)           
 
     return(
 
-        <></>
+        <>
+
+        {BookDetails.map((el) => (
+            <div id="bookGrid">
+                <img src={el.coverPage} />
+                <p>{el.authorName}</p>
+            </div>
+        ))}
+
+        </>
     )
 }
