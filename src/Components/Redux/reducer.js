@@ -13,5 +13,8 @@ export const BookReducer = (store = initState , {type , payload}) => {
 
         case GET_BOOKS :
             return {...store , Books : [...payload]}
+
+        default :
+            return store
     }
 }
