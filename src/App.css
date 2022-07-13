@@ -231,3 +231,29 @@ li{
   margin-top: 12%;
   border: none;
 }
+
+
+/* ------------------------------------- Books App ----------------------------------------------------------- */
+
+
+#bookGrid{
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2% 7%;
+  grid-gap: 30px;
+}
+
+#books{
+  width: 100%;
+  height: 300px;
+}
+
+#books>img{
+  height: 80%;
+  width: 100%;
+}
+
+#books>p{
+  font-size: 26px;
+}

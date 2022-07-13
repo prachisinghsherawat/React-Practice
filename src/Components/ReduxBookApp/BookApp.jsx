@@ -18,12 +18,14 @@ export const BookApp = () => {
 
         <>
 
-        {BookDetails.map((el) => (
-            <div id="bookGrid">
+        <div id="bookGrid">
+         {BookDetails.map((el) => (
+            <div id="books">
                 <img src={el.coverPage} />
                 <p>{el.authorName}</p>
             </div>
         ))}
+        </div>
 
         </>
     )
