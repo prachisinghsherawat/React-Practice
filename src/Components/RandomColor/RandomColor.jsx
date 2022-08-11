@@ -1,6 +1,9 @@
 import { useState } from "react"
 
 
+// ------------------------------------------------------- Generating Random Colors -------------------------------------------------------------
+
+
 export const RandomColour = () => {
 
     const [random , setRandom] = useState("")
@@ -24,6 +27,8 @@ export const RandomColour = () => {
         }
     }
     //console.log(random)
+    
+    
 
     // setInterval(() => {
     //     setRandomColor()
