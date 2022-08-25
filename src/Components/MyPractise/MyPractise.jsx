@@ -11,6 +11,7 @@ export const MyPractise = () => {
     ]
 
     const [item , setItem] = useState(products)
+    const [total , setTotal] = useState()
 
     const incrementCounter = (id) => {
 
@@ -34,21 +35,32 @@ export const MyPractise = () => {
 
     }
 
+    const totalValue = () => {
+        
+    }
+
     return(
 
         <>
 
         <div className="product">
+
             {item.map((el)=>(
                 <div>
                     <p>{el.name}</p>
                     <p>{el.price}</p>
-                    <button onClick={()=>decrementCounter(el.id)}>-</button>
+
+                    <button disabled={el.quantity ==0} onClick={()=>decrementCounter(el.id)}>-</button>
                     <p>{el.quantity}</p>
                     <button onClick={()=>incrementCounter(el.id)}>+</button>
+
+                    <p>{el.price * el.quantity}</p>
                 </div>
             ))}
+            
         </div>
+
+
         </>
     )
 }
