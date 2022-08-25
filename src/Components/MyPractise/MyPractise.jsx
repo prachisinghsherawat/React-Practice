@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 
 export const MyPractise = () => {
@@ -9,9 +10,45 @@ export const MyPractise = () => {
         { id:3 , name : "Product-3" , price :300 , quantity : 0}
     ]
 
+    const [item , setItem] = useState(products)
+
+    const incrementCounter = (id) => {
+
+        item.map((el)=>{
+            if(el.id == id){
+                el.quantity++;
+            }
+        })
+        setItem([...item])
+
+    }
+
+    const decrementCounter = (id) => {
+
+        item.map((el)=>{
+            if(el.id == id){
+                el.quantity--;
+            }
+        })
+        setItem([...item])
+
+    }
+
     return(
 
         <>
+
+        <div className="product">
+            {item.map((el)=>(
+                <div>
+                    <p>{el.name}</p>
+                    <p>{el.price}</p>
+                    <button onClick={()=>decrementCounter(el.id)}>-</button>
+                    <p>{el.quantity}</p>
+                    <button onClick={()=>incrementCounter(el.id)}>+</button>
+                </div>
+            ))}
+        </div>
         </>
     )
 }
