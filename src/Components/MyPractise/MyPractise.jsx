@@ -35,8 +35,9 @@ export const MyPractise = () => {
 
     }
 
-    const totalValue = () => {
+    const deleteItem = (id) => {
         
+        let delItem = item.filter((el)=> el !== id)
     }
 
     return(
@@ -55,9 +56,11 @@ export const MyPractise = () => {
                     <button onClick={()=>incrementCounter(el.id)}>+</button>
 
                     <p>{el.price * el.quantity}</p>
+
+                    <button onClick={()=>deleteItem(el.id)}>Delete</button>
                 </div>
             ))}
-            
+
         </div>
 
 
