@@ -18,6 +18,7 @@ import { RandomColour } from "../RandomColor/RandomColor"
 import { ColorBox } from "../RandomColor/ColorBox"
 import { SlidingBar } from "../RandomColor/SlidingBar"
 import { BookApp } from "../ReduxBookApp/BookApp"
+import { MyPractise } from "../MyPractise/MyPractise"
 
 
 export const AllRoutes = () => {
@@ -50,6 +51,12 @@ export const AllRoutes = () => {
             <Route path="/login" element={< Login/>} />
 
             <Route path="/book" element={<BookApp />} />
+
+
+           {/* ----------------------------------------------------------------------------------------- */}
+
+            
+            <Route path="/practise" element={<MyPractise />} />
 
         </Routes>
     )
