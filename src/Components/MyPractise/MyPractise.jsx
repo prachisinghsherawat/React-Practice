@@ -11,7 +11,7 @@ export const MyPractise = () => {
     ]
 
     const [item , setItem] = useState(products)
-    const [total , setTotal] = useState()
+    // const [deleted , setDeleted] = useState()
 
     const incrementCounter = (id) => {
 
@@ -37,7 +37,8 @@ export const MyPractise = () => {
 
     const deleteItem = (id) => {
         
-        let delItem = item.filter((el)=> el !== id)
+        let delItem = item.filter((el)=> el.id !== id)
+        setItem([...delItem])
     }
 
     return(
